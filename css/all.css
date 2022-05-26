@@ -1,0 +1,517 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.contanier {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.contanier header {
+  width: 940px;
+  margin: 30px 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contanier header .logo {
+  display: block;
+  width: auto;
+  height: 40px;
+}
+
+.contanier header > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contanier header > ul > li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.contanier header > ul > li a {
+  display: block;
+  color: #3F5D45;
+  font-size: 16px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.contanier header > ul > ul {
+  margin-left: 49px;
+}
+
+.contanier header > ul > ul img {
+  display: block;
+}
+
+.contanier .banner {
+  margin-bottom: 60px;
+}
+
+.contanier .banner img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contanier main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 42px;
+}
+
+.contanier main aside {
+  width: 300px;
+  font-size: 24px;
+}
+
+.contanier main aside li {
+  padding: 16px 64px;
+}
+
+.contanier main aside li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #2C4832;
+  white-space: nowrap;
+}
+
+.contanier main aside li:first-child {
+  background-color: #2C4832;
+}
+
+.contanier main aside li:first-child a {
+  color: #FFFFFF;
+}
+
+.contanier main aside li:nth-child(2) {
+  background-color: #EAF0ED;
+}
+
+.contanier main section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contanier main section .card {
+  margin: 0 0 20px 20px;
+}
+
+.contanier main section .card .image {
+  position: relative;
+}
+
+.contanier main section .card .image .label {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 21.6px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #2C4832;
+}
+
+.contanier main section .card .image .favorite {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: url("../img/favorite_border.png") no-repeat;
+}
+
+.contanier main section .card .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  color: #2C4832;
+  text-align: center;
+}
+
+.contanier main section .card .item .title {
+  width: 100%;
+  padding: 14px 33px;
+}
+
+.contanier main section .card .item .price {
+  padding: 14px 20px 14px 25px;
+}
+
+.contanier main section .card .cart {
+  font-size: 24px;
+  padding: 16px 90px;
+  color: #2C4832;
+  background-color: #EAF0ED;
+  border: none;
+}
+
+.contanier .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 10px 42px 60px 42px;
+}
+
+.contanier .pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contanier .pagination ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: 1px solid #dadada;
+}
+
+.contanier .pagination ul li img,
+.contanier .pagination ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+.contanier .pagination ul li:nth-child(n + 2) {
+  padding: 16px 26px;
+  font-size: 20px;
+}
+
+.contanier .pagination ul li:nth-child(n + 2) a {
+  color: #2C4832;
+}
+
+.contanier .pagination ul li:first-child, .contanier .pagination ul li:last-child {
+  padding: 18px;
+}
+
+.contanier .pagination ul li.active {
+  background-color: #2C4832;
+}
+
+.contanier .pagination ul li.active a {
+  color: #FFFFFF;
+}
+
+.contanier footer .email {
+  padding: 30px 122px;
+  background-color: #2C4832;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contanier footer .email .email-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contanier footer .email .email-title img {
+  display: block;
+  width: 40px;
+  height: auto;
+}
+
+.contanier footer .email .email-title p {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.contanier footer .email .email-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+}
+
+.contanier footer .email .email-input img {
+  display: block;
+  width: 24px;
+  height: auto;
+  padding: 16px 20px;
+}
+
+.contanier footer .email .email-input input {
+  padding: 4px 0;
+  border: none;
+}
+
+.contanier footer .email .email-input button {
+  background-color: #FFE180;
+  border: none;
+  padding: 0;
+}
+
+.contanier footer .email .email-input button img {
+  display: block;
+  width: 24px;
+  height: auto;
+  padding: 16px 20px;
+}
+
+.contanier footer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 39px 122px;
+  background-color: #EAF0ED;
+}
+
+.contanier footer .info .l-info {
+  width: 230px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contanier footer .info .l-info img {
+  display: block;
+  width: 171px;
+  height: auto;
+  margin-bottom: 116px;
+}
+
+.contanier footer .info .l-info p {
+  font-family: 'helvetica neue', sans-serif;
+  font-size: 16px;
+  line-height: 22.72px;
+  color: #2C4832;
+  font-weight: regular;
+}
+
+.contanier footer .info .l-info .social {
+  width: 32px;
+  height: auto;
+  margin: 30px 8px 0 0;
+  margin-top: 30px;
+  margin-right: 8px;
+}
+
+.contanier footer .info .r-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+
+.contanier footer .info .r-info p {
+  font-size: 28px;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 700;
+  color: #2C4832;
+  margin-left: 12px;
+}
+
+.contanier footer .info .r-info p:nth-child(2) {
+  text-indent: 8px;
+}
+
+.contanier footer .info .r-info #copyright {
+  margin-top: 59px;
+  -webkit-writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
+  font-size: 16px;
+}
+/*# sourceMappingURL=all.css.map */
